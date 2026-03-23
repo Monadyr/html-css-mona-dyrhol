@@ -280,7 +280,7 @@ footer a {
 }
 .navigation-hamburger {
   position: relative;
-  left: -100vh;
+  left: -300vh;
   transition: 1s;
 }
 

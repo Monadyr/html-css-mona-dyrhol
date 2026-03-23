@@ -112,6 +112,7 @@ h3 p {
  .input-section {
   position: relative;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 input::placeholder {
   opacity: 0;
@@ -120,7 +121,7 @@ input::placeholder {
 .input-section input {
   width: 226px;
   padding: 10px;
-  border: solid #4F656A;
+  border: solid thin #4F656A;
   border-radius: 8px;
   outline: none;
 }
@@ -134,6 +135,7 @@ input::placeholder {
   padding: 1px;
   font-size: 12px;
   color: #4F656A;
+  z-index: 1;
 }
 
 .input-section input:focus + label,
@@ -165,11 +167,11 @@ input:focus::placeholder{
 .payment-method {
   position: relative;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
+  width: 100px;
   column-gap: 5px;
   row-gap: 5px;
   align-items: center;
-  margin-top: 10px;
 }
 
 .payment-method input[type="radio"]{
@@ -183,10 +185,9 @@ input:focus::placeholder{
 
 .payment-method .input-section {
   overflow: hidden;
-  transition: 0.5s;
   max-height: 0;
-  bottom: -100%;
   position: absolute;
+  bottom: -80px;
 }
 
 #mastercard:checked ~ .input-section,
