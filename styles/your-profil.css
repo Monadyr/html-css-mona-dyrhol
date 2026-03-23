@@ -1,0 +1,82 @@
+main {
+  position: relative;
+}
+
+h1 {
+  font-family: var(--second-font-family);
+  font-size: clamp(20px, 2.08vw, 50px);
+  -webkit-text-stroke: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 hr{
+  width:clamp(40vw, 500px, 50vw);
+}
+
+.profil-information{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 50%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 15px;
+}
+p{
+  font-size: 15px;
+}
+
+.purchase ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.purchase {
+  padding: 20px
+}
+
+.profil-details {
+  padding: 20px;
+}
+
+.profil-details h2 {
+  padding-bottom: 10px;
+}
+
+.profil-details div {
+  padding: 5px 10px;
+}
+
+.password-my-profil {
+  margin-top: 20px;
+}
+
+#start-shopping-button {
+  position: absolute;
+  text-decoration: none;
+  padding: clamp(5px, 0.5vw, 16px) clamp(10px, 1vw, 30px);
+  border: none;
+  border-radius: 30px;
+  font-size: clamp(14px, 2.2vw, 18px);
+  margin: 20px;
+  color: #ffffff;
+  background-color: #0A3641;
+  top: 85%;
+  left: 70%;
+}
+
+#start-shopping-button:hover {
+  background-color: #007A99;
+}
+
+@media (max-width: 700px) {
+  #start-shopping-button {
+    top:100%;
+    left: 50%;
+  }
+}

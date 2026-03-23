@@ -1,0 +1,114 @@
+main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 2vw;
+  justify-content: center;
+}
+
+h1 {
+  font-family: var(--second-font-family);
+  font-size: clamp(20px, 2.08vw, 50px);
+  -webkit-text-stroke: 1px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.login-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5vw;
+}
+
+.top-label {
+  position: relative;
+  bottom: 20px;
+  font-weight: 550;
+}
+
+.input-section {
+  position: relative;
+}
+
+input::placeholder {
+  opacity: 0;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 10px;
+  border: solid #4F656A;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-section label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  pointer-events: none;
+  background-color: white;
+  padding: 1px;
+  font-size: 12px;
+  color: #4F656A;
+}
+
+.input-section input:focus + label,
+.input-section input:valid + label {
+  top: -8px;
+  left: 15px;
+  font-size: 10px;
+  color: black;
+}
+input:focus::placeholder{
+  opacity: 1;
+  color:#4F656A;
+}
+
+#email,
+#password {
+  display: grid;
+  width: 227px;
+}
+
+#forgott-password-link{
+  text-decoration: none;
+  color: rgba(10, 54, 65, 72%);
+  font-size: 10px;
+}
+
+.sign-in-button{
+  text-decoration: none;
+  padding: clamp(10px, 0.5vw, 16px) clamp(15px, 2vw, 40px);
+  border: none;
+  border-radius: 30px;
+  font-size: clamp(14px, 2.2vw, 18px);
+}
+
+.sign-in-button,
+.create-profil-button {
+  margin: auto;
+  color: #ffffff;
+  background-color: #0A3641;
+}
+.sign-in-button:hover,
+.create-profil-button:hover{
+  background-color: #007A99;
+}
+
+.create-profil-section{
+  display: grid;
+  margin-top: 50px;
+}
+.create-profil-section p{
+ font-weight: 600;
+ text-align: center;
+ padding: 15px;
+}
+.create-profil-button {
+  text-decoration: none;
+  padding: clamp(5px, 0.5vw, 16px) clamp(10px, 1vw, 30px);
+  border: none;
+  border-radius: 30px;
+  font-size: clamp(14px, 2.2vw, 18px);
+}
+
