@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rainy Days offers a wide range of rain jackets.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
   <header class="header">
   
  <!-- Hamburger menu max-width 900px -->
-    <input type="checkbox" id="mobile-hamburger" />
+    <input type="checkbox" id="mobile-hamburger"/>
     <label for="mobile-hamburger" class="mobile-menu">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1H19" stroke="#0A3641" stroke-width="2" stroke-linecap="round"/>
@@ -27,7 +28,7 @@
     <nav class="navigation-hamburger">
       <a href="products.html">Shop Jackets</a>
       <a href="product-categories.html">Shop after categories</a>
-      <section>
+      <div>
       <input type="checkbox" id="mobile-filter">
       <label for="mobile-filter" class="hamburger-filter">Filter
        <span class="filter-arrow">
@@ -103,7 +104,7 @@
 
          <p class="--filter-type">Price range:</p>
       </div>
-      </section>
+    </div>
       <a href="about-us.html">About us</a>
       <a href="placeholder-page.html">Q&A</a>
     </nav>
@@ -123,7 +124,7 @@
 
         <li>
           <input type="checkbox" id="desktop-menu-toggle">
-          <label for="desktop-menu-toggle" class="menu-button" tabindex="0" role="button" aria-controls="menu">
+          <label for="desktop-menu-toggle" class="menu-button" tabindex="0">
         <svg id="menu-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
         <path d="M1 9.62891H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
@@ -163,7 +164,7 @@
 
   <!-- Navigation bar -->
       <nav class="selections">
-        <a class="camping" href="camping.html">Camping</a></li>
+        <a class="camping" href="camping.html">Camping</a>
         <a class="hiking" href="hiking.html">Hiking</a>
         <a class="exploring" href="exploring.html">Exploring</a>
         <a class="canoeing" href="canoeing.html">Canoeing</a>
@@ -191,32 +192,32 @@
 
    <!-- Inspiration content -->
    <main>
-    <div class="container1">
-      <p class="homepage-info">Jackets built for every occasion</p>
+    <section class="container1">
+      <h2 class="homepage-info">Jackets built for every occasion</h2>
       <div class="red-jacket"><img src="images/backgrounds/luca-massimilian-NCFCbcNVSVQ-unsplash.jpg" alt="man standing with red jacket on a cliff"></div>
-    </div>
+    </section>
 
-    <div class="container2">
+    <section class="container2">
       <div class="yellow-fabric"><img src="images/backgrounds/claudio-schwarz-mJPMbJj4AxA-unsplash.jpg" alt="close-up of rain jacket fabric"></div>
-      <p class="homepage-info">Stay warm & dry wherever you go</p>
-    </div>
+      <h2 class="homepage-info">Stay warm & dry wherever you go</h2>
+    </section>
 
     <div class="container3">
       <a class="see-selection-button" href="products.html">SEE SELECTIONS</a>
-      <div class="skiing"> <img src="images/backgrounds/hendrik-morkel-nxc15snaKHw-unsplash.jpg" alt="group of people going skiing on mountain"></div>
+      <div class="skiing"><img src="images/backgrounds/hendrik-morkel-nxc15snaKHw-unsplash.jpg" alt="group of people going skiing on mountain"></div>
     </div>
   
     <!-- Reviews -->
     <section class="review-box">
-    <div class="customers-reviews">Customers reviews</div>
+    <h3 class="customers-reviews">Customers reviews</h3>
     <section class="reviews">
 
       <div class="ratings">
         <div class="rating-info">
          <div class="ratings-number">5/5</div>
-         <div class="reviews-name">Michael</div>
+         <h3 class="reviews-name">Michael</h3>
         </div>
-         <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
          <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
          <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -228,9 +229,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">Tina</div>
+           <h3 class="reviews-name">Tina</h3>
           </div>
-         <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
          <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
          <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -242,9 +243,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">David</div>
+           <h3 class="reviews-name">David</h3>
           </div>
-         <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
          <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
          <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -256,9 +257,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">Frederick</div>
+           <h3 class="reviews-name">Frederick</h3>
           </div>
-        <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -270,9 +271,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">Dave</div>
+           <h3 class="reviews-name">Dave</h3>
          </div>
-        <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -284,9 +285,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">Thomas</div>
+           <h3 class="reviews-name">Thomas</h3>
          </div>
-        <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -298,9 +299,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">Eddie</div>
+           <h3 class="reviews-name">Eddie</h3>
          </div>
-        <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -312,9 +313,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">Monica</div>
+           <h3 class="reviews-name">Monica</h3>
          </div>
-        <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
@@ -326,9 +327,9 @@
         <div class="ratings">
           <div class="rating-info">
            <div class="ratings-number">5/5</div>
-           <div class="reviews-name">Monica</div>
+           <h3 class="reviews-name">Monica</h3>
         </div>
-        <svg id="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="ratings-stars" width="179" height="29" viewBox="0 0 179 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M15.0491 0.323486L18.5291 11.0337H29.7905L20.6798 17.653L24.1598 28.3633L15.0491 21.744L5.93846 28.3633L9.41843 17.653L0.307757 11.0337H11.5692L15.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M52.0491 0.323486L55.5291 11.0337H66.7905L57.6798 17.653L61.1598 28.3633L52.0491 21.744L42.9385 28.3633L46.4184 17.653L37.3078 11.0337H48.5692L52.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
         <path d="M89.0491 0.323486L92.5291 11.0337H103.791L94.6798 17.653L98.1598 28.3633L89.0491 21.744L79.9385 28.3633L83.4184 17.653L74.3078 11.0337H85.5692L89.0491 0.323486Z" fill="#05809F" stroke="#0A3641" stroke-width="0.2"/>
