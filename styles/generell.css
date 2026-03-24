@@ -27,8 +27,13 @@ main {
 .navigation-hamburger,
 .mobile-filter,
 .mobile-menu,
-.menu-contain {
+.menu-contain,
+.details-mobile {
   display: none;
+}
+
+summary {
+  list-style: none;
 }
 
 /* Top bar */
@@ -49,6 +54,7 @@ main {
 
   align-items: center;
   justify-content: space-between;
+  
   anchor-name: --header;
 }
 
@@ -103,24 +109,18 @@ main {
   inset: 0;
   transition: 0.5s;  
 }
-#mobile-hamburger,
-#desktop-menu-toggle {
-  position: absolute;
-  width: 1px;
-  height: 1px;
+.navigation-hamburger{
   opacity: 0;
 }
 
-#desktop-menu-toggle:focus-visible + .menu-button,
-#mobile-hamburger:focus-visible + .mobile-menu {
-  outline: 2px solid rgb(24, 68, 212);
+.menu-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-
-#desktop-menu-toggle:checked ~.overlay {
+details[open] .menu-contain,
+details[open] .overlay {
   opacity: 1;
-}
-
-#desktop-menu-toggle:checked ~ .menu-contain{
   display: block;
 }
 
@@ -136,6 +136,7 @@ main {
   z-index: 50;
   border-radius: 0 8px 8px 0;
   border-radius: 8px;
+  transition: 0.5s;
 }
 
 .menu-contain a{
@@ -171,7 +172,9 @@ main {
 .hiking:hover,
 .exploring:hover,
 .canoeing:hover,
-.skiing:hover
+.skiing:hover,
+.hover:hover,
+#hamburger-mobile-menu:hover,
 #purchase-button:hover {
   color: #05809F;
   cursor: pointer;
@@ -278,16 +281,16 @@ footer a {
   cursor: pointer;
   z-index: 100;
 }
-.navigation-hamburger {
-  position: relative;
-  left: -300vh;
-  transition: 1s;
+.details-mobile{
+  display: block;
 }
 
- #mobile-hamburger:checked ~ .navigation-hamburger {
-  left: 0;
- }
- .navigation-hamburger a{
+details[open] .navigation-hamburger {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.navigation-hamburger a{
   text-decoration: none;
   color: black;
  }
@@ -295,21 +298,30 @@ footer a {
   font-family: var(--main-font-family);
   font-weight: 200;
   font-size: 12px;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: absolute;
   top: 15px;
+  left: 0;
+
   padding: 55px 20px;
   background-color: white;
   width: 60%;
-  height: 200vh;
+  height: 100dvh;
   border-radius: 0 8px 8px 0;
   color: black;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.filter-information,
-#mobile-filter,
+details[open] .filter-information {
+  display: block;
+}
+
 .filter-information input {
   display: none;
 }
@@ -318,17 +330,8 @@ footer a {
   font-weight: 200;
 }
 
-.filter-arrow{
+.filter-arrow svg{
   display: inline-block;
-  position: relative;
-}
-
-#mobile-filter:checked + .hamburger-filter .filter-arrow {
-  transform: rotate(180deg);
-}
-
-#mobile-filter:checked ~ .filter-information {
-  display: block;
 }
 
 .--filter-type{

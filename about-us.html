@@ -18,26 +18,28 @@
   <header class="header">
   
  <!-- Hamburger menu max-width 900px -->
-    <input type="checkbox" id="mobile-hamburger" />
-    <label for="mobile-hamburger" class="mobile-menu">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <details class="details-mobile">
+    <summary class="mobile-menu">
+      <svg id="hamburger-mobile-menu" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1H19" stroke="#0A3641" stroke-width="2" stroke-linecap="round"/>
         <path d="M1 9.62891H19" stroke="#0A3641" stroke-width="2" stroke-linecap="round"/>
         <path d="M1 18.2582H19" stroke="#0A3641" stroke-width="2" stroke-linecap="round"/>
         </svg>
-    </label> 
+    </summary> 
     <nav class="navigation-hamburger">
-      <a href="products.html">Shop Jackets</a>
-      <a href="product-categories.html">Shop after categories</a>
-      <section>
-      <input type="checkbox" id="mobile-filter">
-      <label for="mobile-filter" class="hamburger-filter">Filter
-       <span class="filter-arrow">
-        <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.352051 0.35498L4.35205 4.32283L8.35205 0.35498" stroke="black"/>
-        </svg>
-      </span>
-     </label>
+      <a class="hover" href="products.html">Shop Jackets</a>
+      <a class="hover" href="product-categories.html">Shop after categories</a>
+
+      <details> 
+       <summary class="hamburger-filter">
+        <span class="hover">Filter</span>
+         <span class="filter-arrow">
+          <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.352051 0.35498L4.35205 4.32283L8.35205 0.35498" stroke="black"/>
+          </svg>
+         </span>
+     </summary>
+     
       <div class="filter-information">  
          <div>
            <p class="--filter-type"> Clothing type: </p>
@@ -103,12 +105,14 @@
             </ul>     
         </div>
 
-         <p class="--filter-type">Price range:</p>
+         <p class="--filter-type">Price range:</p> 
       </div>
-      </section>
-      <a href="about-us.html">About us</a>
-      <a href="placeholder-page.html">Q&A</a>
+      </details>
+    
+      <a class="hover" href="about-us.html">About us</a>
+      <a class="hover" href="placeholder-page.html">Q&A</a>
     </nav>
+    </details>
 
  <!-- top nav bar  -->
     <a href="index.html" class="--logo"><img id="logo" src="images/RainyDays_Logo.png" alt="RainyDays_Logo"></a>
@@ -121,18 +125,18 @@
         Home
        </a></li>
 
-        <li><input type="checkbox" id="desktop-menu-toggle">
-          <label for="desktop-menu-toggle" class="menu-button" tabindex="0" role="button" aria-controls="menu">
+        <li><details>
+          <summary class="menu-button">
         <svg id="menu-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
         <path d="M1 9.62891H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
         <path d="M1 18.2582H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        Menu
-       </label>
+        <span>Menu</span>
+          </summary>
        <div class="overlay"></div> 
        <nav class="menu-contain">
-        <form action=""> <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <form id="menu-box"> <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M16.625 16.625L13.1812 13.1812M15.0417 8.70833C15.0417 12.2061 12.2061 15.0417 8.70833 15.0417C5.21053 15.0417 2.375 12.2061 2.375 8.70833C2.375 5.21053 5.21053 2.375 8.70833 2.375C12.2061 2.375 15.0417 5.21053 15.0417 8.70833Z" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <input class="search-bar" type="text" placeholder="Search">
@@ -142,7 +146,7 @@
         <a href="products.html">See selections</a>
         <a href="product-categories.html">Shop after categories</a>
         <a href="placeholder-page.html">Q&A</a>
-       </nav></li>
+       </nav></details></li>
       
 
         <li><a class="my-profil" href="your-profil.html">
@@ -177,7 +181,7 @@
    <main>
     <h1>About us</h1>
 
-      <section class="about-us">
+      <div class="about-us">
         <div class="images">
           <img id="img1" src="images/backgrounds/karsten-winegeart-4F5G6ibKSjU-unsplash.jpg" alt="a waterfall in the middle of a lush green valley">
         </div>
@@ -196,16 +200,16 @@
         <div class="images">
           <img id="img2" src="images/backgrounds/alex-gruber-ZOCb5G9tA7A-unsplash.jpg" alt="man in black jacket and black pants standing on rock formation looking at the mountains">
         </div>
-      </section>
+      </div>
 
-   <section class="email-section">
+   <div class="email-section">
      <p>Get in touch with us!</p>
-      <form class="email-form">
+      <form class="email-form" method="post">
        <label for="enter-name" id="name">Name:</label>
-       <input id="enter-name" aria-details="" type="text" name="full name" placeholder="Enter name">
+       <input id="enter-name" aria-details="name-info" type="text" name="full name" placeholder="Enter name">
  
        <label for="enter-email" id="email">Email:</label>
-       <input id="enter-email" aria-details="" type="email" name="email" placeholder="Enter email">
+       <input id="enter-email" aria-details="email-info" type="email" name="email" placeholder="Enter email">
        <hr>
        <textarea id="message" name="message">Message:</textarea>
       </form>
@@ -215,13 +219,13 @@
             <span class="default-send">Send</span>
             <span class="varient-sent">Sent</span>
       </label>
-   </section>
+    </div>
 
   </main>
    <!-- Footer -->
   <footer>
     
-  <section class="left-section">
+  <div class="left-section">
     <div class="info">
     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_376_769)"><path d="M6.49998 8.66658V6.49992M6.49998 4.33325H6.5054M11.9166 6.49992C11.9166 9.49146 9.49152 11.9166 6.49998 11.9166C3.50844 11.9166 1.08331 9.49146 1.08331 6.49992C1.08331 3.50838 3.50844 1.08325 6.49998 1.08325C9.49152 1.08325 11.9166 3.50838 11.9166 6.49992Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_376_769"><rect width="13" height="13" fill="white"/></clipPath></defs></svg>
     <a href="placeholder-page.html">Info</a>
@@ -231,9 +235,9 @@
     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_369_1674)"><path d="M11.9166 6.49992C11.9166 9.49146 9.49152 11.9166 6.49998 11.9166M11.9166 6.49992C11.9166 3.50838 9.49152 1.08325 6.49998 1.08325M11.9166 6.49992H1.08331M6.49998 11.9166C3.50844 11.9166 1.08331 9.49146 1.08331 6.49992M6.49998 11.9166C7.85484 10.4333 8.6248 8.5084 8.66665 6.49992C8.6248 4.49144 7.85484 2.56653 6.49998 1.08325M6.49998 11.9166C5.14512 10.4333 4.37516 8.5084 4.33331 6.49992C4.37516 4.49144 5.14512 2.56653 6.49998 1.08325M1.08331 6.49992C1.08331 3.50838 3.50844 1.08325 6.49998 1.08325" stroke="#4D4D4D" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_369_1674"><rect width="13" height="13" fill="white"/></clipPath></defs></svg>
     <a href="placeholder-page.html">Language - English</a>
     </div>
- </section>
+  </div>
 
-  <section class="middle-section">
+  <div class="middle-section">
     <div class="contact">
     <p class="email-title">Email </p>
     <a href="placeholder-page.html">Rainydays@rain.com</a>
@@ -243,9 +247,9 @@
     <p>Free Return</p>
     <p>30 days Open Purchase</p>
     </div>
- </section>
+  </div>
 
- <section class="right-section">
+ <div class="right-section">
   <div class="payment">
    <p>PAYMENT POSSIBILITIES</p>
      <svg width="33" height="23" viewBox="0 0 33 23" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="32" height="22" rx="3.5" fill="white" stroke="#F3F3F3"/><path d="M19.5213 16.6614H13.6319V6.04443H19.5213V16.6614Z" fill="#FF5F00"/><path d="M14.0092 11.3521C14.0092 9.1984 15.0145 7.27994 16.58 6.04362C15.4352 5.13955 13.9904 4.59995 12.4202 4.59995C8.70291 4.59995 5.68964 7.62294 5.68964 11.3521C5.68964 15.0813 8.70291 18.1042 12.4202 18.1042C13.9904 18.1042 15.4352 17.5646 16.58 16.6606C15.0145 15.4243 14.0092 13.5058 14.0092 11.3521Z" fill="#EB001B"/><path d="M27.4643 11.3521C27.4643 15.0813 24.451 18.1042 20.7338 18.1042C19.1636 18.1042 17.7188 17.5646 16.5735 16.6606C18.1395 15.4243 19.1447 13.5058 19.1447 11.3521C19.1447 9.1984 18.1395 7.27994 16.5735 6.04362C17.7188 5.13955 19.1636 4.59995 20.7338 4.59995C24.451 4.59995 27.4643 7.62294 27.4643 11.3521Z" fill="#F79E1B"/></svg>
@@ -264,7 +268,7 @@
     <rect x="0.5" y="0.5" width="32" height="22" rx="3.5" fill="#F4B6C7" stroke="#F3F3F3"/>
     <path d="M12.5275 10.4199C12.983 10.4199 13.406 10.5658 13.756 10.8135V10.5391H14.9943V14.8311H13.756V14.5566C13.406 14.8042 12.983 14.9502 12.5275 14.9502C11.322 14.95 10.3451 13.9361 10.3448 12.6855C10.3448 11.4348 11.3219 10.4201 12.5275 10.4199ZM25.5958 10.4199C26.0515 10.4199 26.4744 10.5658 26.8243 10.8135V10.5391H28.0626V14.8311H26.8243V14.5566C26.4744 14.8042 26.0515 14.9502 25.5958 14.9502C24.3904 14.95 23.4134 13.9361 23.4132 12.6855C23.4132 11.4348 24.3903 10.4201 25.5958 10.4199ZM29.3781 13.3086C29.8073 13.3087 30.1554 13.6699 30.1554 14.1152C30.1554 14.5605 29.8072 14.9218 29.3781 14.9219C28.9488 14.9219 28.6007 14.5605 28.6007 14.1152C28.6007 13.6698 28.9488 13.3086 29.3781 13.3086ZM4.2179 8.625V14.833H2.84485V8.625H4.2179ZM7.64661 8.625C7.64661 9.96896 7.14186 11.2192 6.24231 12.1484L8.13977 14.833H6.44446L4.38196 11.915L4.91418 11.502C5.79691 10.816 6.30286 9.76741 6.30286 8.625H7.64661ZM9.83704 14.8311H8.54016V8.62598H9.83704V14.8311ZM16.9103 11.0977C17.1586 10.7623 17.6221 10.5391 18.1251 10.5391V11.7881C18.1203 11.788 18.1153 11.7881 18.1105 11.7881C17.6204 11.7881 16.9132 12.1511 16.9132 12.8271V14.8311H15.6427V10.5391H16.9103V11.0977ZM21.212 10.4238C22.2099 10.4239 22.9757 11.1028 22.9757 12.1016V14.8311H21.7384V12.5664C21.7383 11.9407 21.4251 11.6036 20.881 11.6035C20.3731 11.6035 19.9505 11.9228 19.9503 12.5752V14.8311H18.7023V10.5391H19.9357V11.0225C20.2488 10.5828 20.7172 10.4238 21.212 10.4238ZM12.629 11.5811C12.0092 11.5811 11.507 12.0757 11.507 12.6855C11.5072 13.2952 12.0094 13.789 12.629 13.7891C13.2488 13.7891 13.7519 13.2953 13.7521 12.6855C13.7521 12.0756 13.249 11.5811 12.629 11.5811ZM25.6974 11.5811C25.0776 11.5812 24.5753 12.0757 24.5753 12.6855C24.5755 13.2952 25.0777 13.7889 25.6974 13.7891C26.3172 13.7891 26.8202 13.2953 26.8204 12.6855C26.8204 12.0756 26.3173 11.5811 25.6974 11.5811Z" fill="#17120F"/></svg>
     </div>
- </section>
+  </div>
 
 </footer>
 </body>

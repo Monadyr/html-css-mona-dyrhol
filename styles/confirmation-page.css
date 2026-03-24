@@ -51,8 +51,9 @@ h3 {
   line-height: 2;
 }
 
-h3 p {
+h3 span {
   font-weight: 400;
+  display: block;
 }
 
 .price {
@@ -62,7 +63,7 @@ h3 p {
   align-items: center;
 }
 
-.purchased-items span {
+.purchased-items .quantity-box {
   font-size: 15px;
   width: 22px;
   height: 19px;
