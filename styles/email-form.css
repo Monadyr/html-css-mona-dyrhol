@@ -1,0 +1,67 @@
+/* Email form */
+.email-section p {
+ font-size: clamp(12px, 15px, 30px);  
+ padding: 5px 10px;
+}
+.email-line,
+.name-line {
+  white-space: nowrap;
+}
+
+.email-form{
+  border: solid;
+  border-color: #0A3641;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  width: clamp(250px, 40vw, 800px);
+  height: clamp(350px, 20vw, 800px);
+  background-color: white;
+  object-fit: contain;
+}
+
+.email-form hr {
+  border: none;
+  border-top: solid;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+#message,
+.name,
+.email,
+#enter-name,
+#enter-email {
+  color: #0A3641;
+  border: none;
+  line-height: 1.5;
+  padding: 5px;
+}
+#message {
+  font-family: var(--main-font-family);
+  width: clamp(230px, 38vw, 790px);
+  height: clamp(250px, 15px, 800px);
+  object-fit: contain;
+}
+
+.send-button {
+  border: none;
+  background: none;
+  position: relative;
+  bottom: -4vw;
+}
+
+.send-button .varient-sent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.send-button:active .default-send {
+  opacity: 0;
+}
+.send-button:active .varient-sent{
+  opacity: 1;
+}

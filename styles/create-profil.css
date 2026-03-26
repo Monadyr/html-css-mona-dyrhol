@@ -31,7 +31,7 @@ input::placeholder {
 .input-section input {
   width: 226px;
   padding: 10px;
-  border: solid #4F656A;
+  border: solid thin #4F656A;
   border-radius: 8px;
   outline: none;
 }

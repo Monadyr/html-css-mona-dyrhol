@@ -23,12 +23,12 @@ h1 {
   align-items: center;
 }
 
-h3 {
+.brand-product {
   font-size: 15px;
   font-weight: bold;
   padding: 30px;
 }
-h3 span {
+.brand-product span {
   font-weight: 400;
   display: block;
   line-height: 2;
@@ -42,13 +42,13 @@ h3 span {
   white-space: nowrap;
 }
 
-.cart-container input {
+#quantity-selection {
   font-size: 15px;
   padding: 12px 15.25px;
   margin: 10px;
   border: solid 1px rgba(10, 54, 65, 74%);
 }
-.cart-container a {
+#remove-from-cart-button {
   text-decoration: none;
   color: inherit;
   font-size: 12px;
@@ -105,13 +105,15 @@ h3 span {
   justify-content: center;
  }
 
+/* Name section */
  .name-input {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 5vw;
  }
 
- .input-section {
+ .input-section,
+ .address-section {
   position: relative;
   margin-bottom: 40px;
   margin-top: 10px;
@@ -157,6 +159,7 @@ input:focus::placeholder{
   display: grid;
   row-gap: 10px;
   grid-template-rows: auto 1fr auto;
+  border: none;
 }
 
 .payment-info p{
@@ -197,7 +200,7 @@ input:focus::placeholder{
   max-height: 1000px;
 }
 
-#purchase-button{
+.purchase-button{
   position: relative;
   text-decoration: none;
   justify-self: end;
@@ -213,6 +216,14 @@ input:focus::placeholder{
 .payment-method-select:hover,
 .card-info:hover {
   border: solid thin;
+}
+
+.card-information input:focus + label,
+.card-information input:valid + label  {
+  top: -8px;
+  left: 15px;
+  font-size: 10px;
+  color: black;
 }
 
 @media (max-width: 800px){

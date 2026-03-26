@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/generell.css">
   <link rel="stylesheet" href="styles/cart.css">
+  <link rel="stylesheet" href="styles/filter-button.css">
   <title>Rainy Days Home</title>
   <link rel="icon" href="images/RainyDays_Logo.png">
 </head>
@@ -40,69 +41,69 @@
      </summary>
      
       <div class="filter-information">  
-         <div>
-           <p class="--filter-type"> Clothing type: </p>
-             <ul class="--section-vertical">
-             <li><label><input type="checkbox"><span class="--checked">Light rain jacket</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Waterproof</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Windproof</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Winter jackets</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Wool</span></label></li>
+         <fieldset>
+           <legend class="filter-type"> Clothing type: </legend>
+             <ul class="section-vertical">
+             <li><label><input type="checkbox"><span class="checked">Light rain jacket</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Waterproof</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Windproof</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Winter jackets</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Wool</span></label></li>
              </ul>
-         </div>
+         </fieldset>
 
-         <div>
-           <p class="--filter-type">Sizes:</p>
-            <ul class="--section-horizontal">
-             <li><label><input type="checkbox" name="size" value="xs"><span class="--size-checked">XS</span></label></li>
-             <li><label><input type="checkbox" name="size" value="s"><span class="--size-checked">S</span></label></li>
-             <li><label><input type="checkbox" name="size" value="m"><span class="--size-checked">M</span></label></li>
-             <li><label><input type="checkbox" name="size" value="l"><span class="--size-checked">L</span></label></li>
-             <li><label><input type="checkbox" name="size" value="xl"><span class="--size-checked">XL</span></label></li>
+         <fieldset>
+           <legend class="filter-type">Sizes:</legend>
+            <ul class="section-horizontal">
+             <li><label><input type="checkbox" name="size" value="xs"><span class="size-checked">XS</span></label></li>
+             <li><label><input type="checkbox" name="size" value="s"><span class="size-checked">S</span></label></li>
+             <li><label><input type="checkbox" name="size" value="m"><span class="size-checked">M</span></label></li>
+             <li><label><input type="checkbox" name="size" value="l"><span class="size-checked">L</span></label></li>
+             <li><label><input type="checkbox" name="size" value="xl"><span class="size-checked">XL</span></label></li>
             </ul>
-         </div>
+         </fieldset>
 
-         <div> 
-           <p class="--filter-type">Colors:</p>
-            <ul class="--section-horizontal">
-             <li class="--color-red"><label><input type="checkbox" name="color" value="red"><span class="--color-checked">Red</span></label></li>
-             <li class="--color-yellow"><label><input type="checkbox" name="color" value="yellow"><span class="--color-checked">Yellow</span></label></li>
-             <li class="--color-blue"><label><input type="checkbox" name="color" value="blue"><span class="--color-checked">Blue</span></label></li>
-             <li class="--color-green"><label><input type="checkbox" name="color" value="green"><span class="--color-checked">Green</span></label></li>
-             <li class="--color-black"><label><input type="checkbox" name="color" value="black"><span class="--color-checked">Black</span></label></li>
-             <li class="--color-white"><label><input type="checkbox" name="color" value="white"><span class="--color-checked">White</span></label></li>
+         <fieldset> 
+           <legend class="filter-type">Colors:</legend>
+            <ul class="section-horizontal">
+             <li class="color-red"><label><input type="checkbox" name="color" value="red"><span class="color-checked">Red</span></label></li>
+             <li class="color-yellow"><label><input type="checkbox" name="color" value="yellow"><span class="color-checked">Yellow</span></label></li>
+             <li class="color-blue"><label><input type="checkbox" name="color" value="blue"><span class="color-checked">Blue</span></label></li>
+             <li class="color-green"><label><input type="checkbox" name="color" value="green"><span class="color-checked">Green</span></label></li>
+             <li class="color-black"><label><input type="checkbox" name="color" value="black"><span class="color-checked">Black</span></label></li>
+             <li class="color-white"><label><input type="checkbox" name="color" value="white"><span class="color-checked">White</span></label></li>
             </ul>
-        </div>
+         </fieldset>
 
-         <div>
-           <p class="--filter-type">Collections:</p>
-            <ul class="--section-vertical">
-             <li><label><input type="checkbox"><span class="--checked">Camping</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Canoeing</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Exploring</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Hiking</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Skiing</span></label></li>
+         <fieldset>
+           <legend class="filter-type">Collections:</legend>
+            <ul class="section-vertical">
+             <li><label><input type="checkbox"><span class="checked">Camping</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Canoeing</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Exploring</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Hiking</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Skiing</span></label></li>
             </ul>
-          </div>
+         </fieldset>
 
-         <div>
-           <p class="--filter-type">Seasons:</p>
-            <ul class="--section-vertical">
-             <li><label><input type="checkbox"><span class="--checked">Summer</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Fall</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Winter</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Spring</span></label></li>
+         <fieldset>
+           <legend class="filter-type">Seasons:</legend>
+            <ul class="section-vertical">
+             <li><label><input type="checkbox"><span class="checked">Summer</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Fall</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Winter</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Spring</span></label></li>
             </ul>
-        </div>
+         </fieldset>
 
-         <div>
-          <p class="--filter-type">Type:</p>
-            <ul class="--section-vertical">
-             <li><label><input type="checkbox"><span class="--checked">Women</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Men</span></label></li>
-             <li><label><input type="checkbox"><span class="--checked">Unisex</span></label></li>
+         <fieldset>
+          <legend class="filter-type">Type:</legend>
+            <ul class="section-vertical">
+             <li><label><input type="checkbox"><span class="checked">Women</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Men</span></label></li>
+             <li><label><input type="checkbox"><span class="checked">Unisex</span></label></li>
             </ul>     
-        </div>
+         </fieldset>
 
          <p class="--filter-type">Price range:</p> 
       </div>
@@ -135,11 +136,13 @@
           </summary>
        <div class="overlay"></div> 
        <nav class="menu-contain">
-        <form id="menu-box"> <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.625 16.625L13.1812 13.1812M15.0417 8.70833C15.0417 12.2061 12.2061 15.0417 8.70833 15.0417C5.21053 15.0417 2.375 12.2061 2.375 8.70833C2.375 5.21053 5.21053 2.375 8.70833 2.375C12.2061 2.375 15.0417 5.21053 15.0417 8.70833Z" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <input class="search-bar" type="text" placeholder="Search">
-        </form>
+        <div class="search-box"> 
+          <svg class="search-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">        
+          <path d="M16.625 16.625L13.1812 13.1812M15.0417 8.70833C15.0417 12.2061 12.2061 15.0417 8.70833 15.0417C5.21053 15.0417 2.375 12.2061 2.375 8.70833C2.375 5.21053 5.21053 2.375 8.70833 2.375C12.2061 2.375 15.0417 5.21053 15.0417 8.70833Z" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <label for="search-bar" class="screen-reader-only">Search bar</label>
+          <input id="search-bar" type="text" placeholder="Search">
+       </div>
         <a href="sign-in.html">Sign in/sign up</a>
         <a href="about-us.html">About us</a>
         <a href="products.html">See selections</a>
@@ -155,7 +158,7 @@
         <span>My profile</span>
        </a></li>
 
-        <li><a class="cart" href="cart.html"><svg id="cart-icon" width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li><a class="cart" href="cart.html"><span class="screen-reader-only">Go to cart</span><svg id="cart-icon" width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1H2.20055C3.04282 1 3.79482 1.52768 4.0813 2.31973L5.06907 5.0506M5.06907 5.0506L8.04519 13.2787C8.33168 14.0708 9.08368 14.5984 9.92594 14.5984H19.4871C20.219 14.5984 20.8924 14.1987 21.2429 13.5561L24.269 8.0083C24.9959 6.67555 24.0313 5.0506 22.5132 5.0506H5.06907Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
         <circle cx="10.5478" cy="18.3596" r="2.0253" fill="currentcolor"/>
         <circle cx="18.0704" cy="18.3596" r="2.0253" fill="currentcolor"/>
@@ -182,11 +185,12 @@
     <div class="cart-container">
       <div class="cart-items">
         <img src="images/products/RainyDays_Jacket4.jpg" alt="black jacket with white details" style="width:150px;">
-        <h3 class="brand-product">Rainydays<span>JACKET</span></h3>
+        <p class="brand-product">Rainydays<span>JACKET</span></p>
         <p class="price">2 295,00kr</p>
       </div>
       <div>
-        <input id="value-items" type="number" inputmode="numeric" value="1" min="0" max="9">
+        <label for="quantity-selection" class="screen-reader-only">quantity of products</label>
+        <input id="quantity-selection" type="number" inputmode="numeric" value="1" min="0" max="9">
         <a id="remove-from-cart-button" href="placeholder-page.html">Remove from cart</a>
       </div>
     </div>
@@ -227,34 +231,35 @@
 
     </form>
      
-    <div class="payment-info">
-     <div>
-      <h2>Payment</h2>
-      <p>Choose payment method</p>
-     </div>
-
+   <fieldset class="payment-info">
+     <legend class="screen-reader-only">Payment field</legend>
+      <div>
+         <h2>Payment</h2>
+         <p>Choose payment method</p>
+      </div>
+     
      <div class="payment-method">
       <input type="radio" name="payment" id="apple-pay" checked>
-      <label for="apple-pay">
+      <label for="apple-pay"> <span class="screen-reader-only">Apple Pay</span>
         <svg class="payment-method-select" width="48" height="32" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.5" y="0.5" width="32" height="21" rx="3.5" fill="white" stroke="#F3F3F3"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0008 8.2095C9.76073 8.48711 9.37668 8.70606 8.99262 8.67478C8.94462 8.29943 9.13264 7.90061 9.35267 7.65429C9.59271 7.36886 10.0128 7.16554 10.3528 7.1499C10.3928 7.5409 10.2368 7.92407 10.0008 8.2095ZM10.3488 8.74907C10.0105 8.73004 9.70174 8.84852 9.45238 8.94422C9.29191 9.00581 9.15602 9.05796 9.05264 9.05796C8.93662 9.05796 8.79512 9.00302 8.63625 8.94133C8.42807 8.86051 8.19007 8.7681 7.94049 8.77253C7.36841 8.78035 6.83634 9.09706 6.5443 9.60144C5.94422 10.6102 6.38828 12.1038 6.96836 12.9249C7.25239 13.3315 7.59244 13.7773 8.0405 13.7616C8.23762 13.7544 8.37942 13.6956 8.52616 13.6347C8.69511 13.5646 8.87061 13.4918 9.14465 13.4918C9.40919 13.4918 9.57701 13.5627 9.73812 13.6308C9.89131 13.6955 10.0384 13.7576 10.2568 13.7538C10.7209 13.746 11.0129 13.3472 11.2969 12.9405C11.6035 12.5041 11.7382 12.0782 11.7586 12.0135L11.761 12.0061C11.7605 12.0056 11.7567 12.0039 11.75 12.0009C11.6476 11.9551 10.8644 11.6046 10.8569 10.665C10.8493 9.87622 11.4781 9.47661 11.5771 9.4137C11.5831 9.40987 11.5871 9.40729 11.589 9.40595C11.1889 8.82727 10.5648 8.76471 10.3488 8.74907ZM13.5612 13.7108V7.61519H15.9016C17.1097 7.61519 17.9538 8.42846 17.9538 9.61708C17.9538 10.8057 17.0937 11.6268 15.8696 11.6268H14.5294V13.7108H13.5612ZM14.5294 8.41282H15.6455C16.4856 8.41282 16.9657 8.85073 16.9657 9.62099C16.9657 10.3913 16.4856 10.8331 15.6415 10.8331H14.5294V8.41282ZM21.1503 12.9796C20.8942 13.4567 20.3302 13.7577 19.7221 13.7577C18.8219 13.7577 18.1939 13.2338 18.1939 12.444C18.1939 11.662 18.8019 11.2123 19.9261 11.1459L21.1343 11.0755V10.7392C21.1343 10.2427 20.8022 9.97289 20.2101 9.97289C19.7221 9.97289 19.366 10.2192 19.294 10.5946H18.4219C18.4499 9.80476 19.21 9.23 20.2381 9.23C21.3463 9.23 22.0664 9.79694 22.0664 10.6767V13.7108H21.1703V12.9796H21.1503ZM19.9821 13.0344C19.466 13.0344 19.138 12.792 19.138 12.4205C19.138 12.0373 19.454 11.8145 20.0581 11.7793L21.1343 11.7128V12.0569C21.1343 12.6277 20.6382 13.0344 19.9821 13.0344ZM25.0388 13.9493C24.6507 15.0167 24.2067 15.3686 23.2625 15.3686C23.1905 15.3686 22.9505 15.3608 22.8945 15.3452V14.614C22.9545 14.6218 23.1025 14.6296 23.1785 14.6296C23.6066 14.6296 23.8466 14.4537 23.9946 13.9962L24.0827 13.7264L22.4424 9.28865H23.4546L24.5947 12.8897H24.6147L25.7549 9.28865H26.739L25.0388 13.9493Z" fill="black"/></svg>
       </label>
 
       <input type="radio" name="payment" id="klarna">
-      <label for="klarna">
+      <label for="klarna"><span class="screen-reader-only">Klarna</span>
         <svg class="payment-method-select" width="48" height="34" viewBox="0 0 33 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.5" y="0.5" width="32" height="22" rx="3.5" fill="#F4B6C7" stroke="#F3F3F3"/>
         <path d="M12.5275 10.4199C12.983 10.4199 13.406 10.5658 13.756 10.8135V10.5391H14.9943V14.8311H13.756V14.5566C13.406 14.8042 12.983 14.9502 12.5275 14.9502C11.322 14.95 10.3451 13.9361 10.3448 12.6855C10.3448 11.4348 11.3219 10.4201 12.5275 10.4199ZM25.5958 10.4199C26.0515 10.4199 26.4744 10.5658 26.8243 10.8135V10.5391H28.0626V14.8311H26.8243V14.5566C26.4744 14.8042 26.0515 14.9502 25.5958 14.9502C24.3904 14.95 23.4134 13.9361 23.4132 12.6855C23.4132 11.4348 24.3903 10.4201 25.5958 10.4199ZM29.3781 13.3086C29.8073 13.3087 30.1554 13.6699 30.1554 14.1152C30.1554 14.5605 29.8072 14.9218 29.3781 14.9219C28.9488 14.9219 28.6007 14.5605 28.6007 14.1152C28.6007 13.6698 28.9488 13.3086 29.3781 13.3086ZM4.2179 8.625V14.833H2.84485V8.625H4.2179ZM7.64661 8.625C7.64661 9.96896 7.14186 11.2192 6.24231 12.1484L8.13977 14.833H6.44446L4.38196 11.915L4.91418 11.502C5.79691 10.816 6.30286 9.76741 6.30286 8.625H7.64661ZM9.83704 14.8311H8.54016V8.62598H9.83704V14.8311ZM16.9103 11.0977C17.1586 10.7623 17.6221 10.5391 18.1251 10.5391V11.7881C18.1203 11.788 18.1153 11.7881 18.1105 11.7881C17.6204 11.7881 16.9132 12.1511 16.9132 12.8271V14.8311H15.6427V10.5391H16.9103V11.0977ZM21.212 10.4238C22.2099 10.4239 22.9757 11.1028 22.9757 12.1016V14.8311H21.7384V12.5664C21.7383 11.9407 21.4251 11.6036 20.881 11.6035C20.3731 11.6035 19.9505 11.9228 19.9503 12.5752V14.8311H18.7023V10.5391H19.9357V11.0225C20.2488 10.5828 20.7172 10.4238 21.212 10.4238ZM12.629 11.5811C12.0092 11.5811 11.507 12.0757 11.507 12.6855C11.5072 13.2952 12.0094 13.789 12.629 13.7891C13.2488 13.7891 13.7519 13.2953 13.7521 12.6855C13.7521 12.0756 13.249 11.5811 12.629 11.5811ZM25.6974 11.5811C25.0776 11.5812 24.5753 12.0757 24.5753 12.6855C24.5755 13.2952 25.0777 13.7889 25.6974 13.7891C26.3172 13.7891 26.8202 13.2953 26.8204 12.6855C26.8204 12.0756 26.3173 11.5811 25.6974 11.5811Z" fill="#17120F"/></svg>
       </label>
       
       <input type="radio" name="payment" id="mastercard">
-      <label for="mastercard">
+      <label for="mastercard"><span class="screen-reader-only">Mastercard</span>
         <svg class="card-info" width="48" height="34" viewBox="0 0 33 23" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="32" height="22" rx="3.5" fill="white" stroke="#F3F3F3"/><path d="M19.5213 16.6614H13.6319V6.04443H19.5213V16.6614Z" fill="#FF5F00"/><path d="M14.0092 11.3521C14.0092 9.1984 15.0145 7.27994 16.58 6.04362C15.4352 5.13955 13.9904 4.59995 12.4202 4.59995C8.70291 4.59995 5.68964 7.62294 5.68964 11.3521C5.68964 15.0813 8.70291 18.1042 12.4202 18.1042C13.9904 18.1042 15.4352 17.5646 16.58 16.6606C15.0145 15.4243 14.0092 13.5058 14.0092 11.3521Z" fill="#EB001B"/><path d="M27.4643 11.3521C27.4643 15.0813 24.451 18.1042 20.7338 18.1042C19.1636 18.1042 17.7188 17.5646 16.5735 16.6606C18.1395 15.4243 19.1447 13.5058 19.1447 11.3521C19.1447 9.1984 18.1395 7.27994 16.5735 6.04362C17.7188 5.13955 19.1636 4.59995 20.7338 4.59995C24.451 4.59995 27.4643 7.62294 27.4643 11.3521Z" fill="#F79E1B"/></svg>
       </label>
 
       <input type="radio" name="payment" id="visa">
-      <label for="visa">
+      <label for="visa"><span class="screen-reader-only">Visa</span>
         <svg class="card-info" width="48" height="32" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.5" y="0.5" width="32" height="21" rx="3.5" fill="white" stroke="#F3F3F3"/>
         <path d="M14.6519 15.0883H12.4548L13.829 7.38794H16.026L14.6519 15.0883Z" fill="#15195A"/>
@@ -264,12 +269,12 @@
        
       <div class="input-section">
        <input type="text" id="card-number" inputmode="numeric" placeholder="Enter card number">
-       <label for="card-number" class="card-number">Card</label>
+       <label for="card-number" class="card-information">Card</label>
       </div>
 
       </div> 
-       <a id="purchase-button" href="confirmation.page.html">Purchase</a>
-   </div>
+       <a class="purchase-button" href="confirmation.page.html">Purchase</a>
+    </fieldset>
     </section>
     
   </main>

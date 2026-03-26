@@ -187,68 +187,13 @@ h2{
   position: absolute;
   background-color:rgb(246, 249, 250);
   border: solid;
-  padding: 2vw 1vw;
+  padding: 2vw 2vw 6vw 2vw;
   border-radius: 8px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -40%);
   pointer-events: none;
   opacity: 0;
-}
-.email-section p {
-  font-size: clamp(12px, 1.5vw, 30px);
-  margin-top: 0;
-  margin-bottom: 1vw;
-}
-
-.email-form{
-  border: solid;
-  border-color: #0A3641;
-  padding: 5px;
-  margin: 5px 0 10px 0;
-  border-radius: 8px;
-  width: 44vw;
-  background-color: white;
-}
-
-.email-form hr {
-  border: none;
-  border-top: solid;
-  margin-left: -5px;
-  margin-right: -5px;
-}
-
-#message,
-#name,
-#email,
-#enter-name,
-#enter-email {
-  color: #0A3641;
-  border: none;
-  line-height: 1.5;
-  padding: 5px;
-}
-#message {
-  font-family: var(--main-font-family);
-  width: 90%;
-  height: 20vw;
-}
-
-#send-toggle,
-.varient-sent {
-  display: none;
-}
-.varient-sent,
-.default-send {
-  margin: 10px;
-}
-
-#send-toggle:checked + .send-button .default-send {
-  display: none;
-}
-
-#send-toggle:checked + .send-button .varient-sent {
-  display: inline-block;
 }
 
 /* Bottom section - main  */
