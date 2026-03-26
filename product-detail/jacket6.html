@@ -234,7 +234,7 @@
 
             <input type="checkbox" id="support-toggle">
             <label for="support-toggle" class="support">Need support ?</label>
-            <div class="overlay-need-support"></div>
+            <label for="support-toggle" class="overlay-need-support" aria-label="close support window"></label>
           <div class="email-section">
           <p>Send us an email</p>
         <form class="email-form" method="post">
@@ -252,7 +252,7 @@
           <label for="message" class="screen-reader-only">Type message</label>
           <textarea id="message" name="message" placeholder="Message:"></textarea>
       
-      <button type="submit" class="send-button">
+      <button type="button" class="send-button">
             <span class="default-send">Send</span>
             <span class="varient-sent">Sent</span>
       </button>

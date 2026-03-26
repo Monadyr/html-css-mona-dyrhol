@@ -156,10 +156,15 @@ h2{
 .add-to-cart:hover {
   background-color: #007A99;
 }
-
-#support-toggle,
 .email-section {
+  opacity: 0;
+}
+#support-toggle{
   display: none;
+}
+label.support {
+  cursor: pointer;
+  display: inline-block;
 }
 .overlay-need-support{
   position: fixed;
@@ -167,24 +172,22 @@ h2{
   height: 100vh;
   opacity: 0;
   pointer-events: none;
+  cursor: pointer;
   inset: 0;
-  transition: 0.5s; 
+  transition: opacity 0.5s; 
   z-index: 100; 
 }
 
-#support-toggle:checked ~ .email-section {
-  opacity: 1;
-  pointer-events: auto;
-  display: block;
-}
+#support-toggle:checked ~ .email-section,
 #support-toggle:checked ~ .overlay-need-support {
   opacity: 1;
   pointer-events: auto;
 }
 
+
 .email-section{
-  z-index: 100;
-  position: absolute;
+  z-index: 101;
+  position: fixed;
   background-color:rgb(246, 249, 250);
   border: solid;
   padding: 2vw 2vw 6vw 2vw;
