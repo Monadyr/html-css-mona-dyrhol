@@ -7,6 +7,14 @@
   -webkit-text-stroke: 1.3px;
 }
 
+#price {
+    width: 82px;
+    height: 7px;
+    accent-color: #007A99;
+    display: block;
+    margin: 17px 40px;
+   }
+
 .filter-type{
   padding-left: 20px;
   margin-bottom: 0;

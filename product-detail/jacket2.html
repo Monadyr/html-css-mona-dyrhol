@@ -106,7 +106,10 @@
             </ul>     
          </fieldset>
 
-         <p class="--filter-type">Price range:</p> 
+        <div>
+            <label for="price" class="filter-type">Price range:</label>
+            <input type="range" id="price" min="500" max="3000" value="1000">
+          </div>
       </div>
       </details>
     
@@ -231,7 +234,7 @@
 
             <input type="checkbox" id="support-toggle">
             <label for="support-toggle" class="support">Need support ?</label>
-            <label for="support-toggle" class="overlay-need-support"></label>
+            <div class="overlay-need-support"></div>
           <div class="email-section">
             <p>Send us an email</p>
             <form class="email-form" method="post">

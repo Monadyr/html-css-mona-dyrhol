@@ -70,7 +70,7 @@ h1{
 .products-area {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: -10vh;
+  margin-top: -5vh;
   column-gap: clamp(2vw, 2vw, 20vw);
   row-gap: clamp(5vw, 10vw, 20vw);
   place-items: center;
