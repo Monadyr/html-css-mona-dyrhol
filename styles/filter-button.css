@@ -13,6 +13,7 @@
     accent-color: #007A99;
     display: block;
     margin: 17px 40px;
+    opacity: 1;
    }
 
 .filter-type{
@@ -30,6 +31,11 @@
   margin-top: 0;
   padding-left: 20px;
 }
+.section-vertical input[type="checkbox"]:focus +.checked,
+.section-horizontal input[type="checkbox"]:focus +.checked {
+  outline: 2px solid rgb(32, 90, 214);
+  outline-offset: 2px;
+}
 
 .section-horizontal {
   display: grid;
@@ -37,7 +43,7 @@
   grid-template-columns: repeat(7, 1fr);
   list-style: none;
   font-size: 15px;
-  line-height: 2;
+  line-height: 2; 
   padding-left: 20px;
 }
 
@@ -111,7 +117,7 @@ li .color-checked{
 }
 
 .filter-information input {
-  display: none;
+  opacity: 0;
 }
 .filter-information fieldset {
   border: none;

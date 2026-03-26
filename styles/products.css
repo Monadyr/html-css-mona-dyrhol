@@ -30,7 +30,7 @@ h1{
 /* FILTER BUTTON */
 .sidebar input,
 #filter-toggle{
-  display: none;
+  opacity: 0;
 }
 
 .filter-button{
@@ -64,6 +64,27 @@ h1{
 }
 .sidebar fieldset {
   border: none;
+}
+
+.keyboard-nav{
+  position:absolute;
+  width: 10px;
+  height: 10px;
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  overflow: hidden;
+}
+.keyboard-nav:focus + label.filter-button {
+  outline: 2px solid rgb(32, 90, 214);
+  outline-offset: 2px;
+}
+label.filter-button{
+  cursor: pointer;
+  display: inline-block;
 }
 
 /* Main */

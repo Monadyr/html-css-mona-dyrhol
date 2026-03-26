@@ -160,12 +160,31 @@ h2{
   opacity: 0;
 }
 #support-toggle{
-  display: none;
+  opacity: 0;
 }
 label.support {
   cursor: pointer;
   display: inline-block;
 }
+.keyboard-nav{
+  position:relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.keyboard-nav:focus + label.support {
+  outline: 2px solid rgb(32, 90, 214);
+  outline-offset: 2px;
+}
+label.support{
+  cursor: pointer;
+  display: inline-block;
+}
+
 .overlay-need-support{
   position: fixed;
   background-color: rgba(10, 54, 65, 45%);
