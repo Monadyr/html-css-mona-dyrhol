@@ -212,25 +212,26 @@
 
      <div class="name-input">
       <div class="input-section">
-        <input type="text" id="first-name" name="firstname" required autocomplete="username" placeholder="click to type">
+        <input type="text" id="first-name" name="firstname" required autocomplete="username" placeholder="Click to type">
         <label for="first-name">First name</label>
       </div>
 
       <div class="input-section">
-        <input type="text" id="last-name" name="lastname" required autocomplete="username" placeholder="click to type">
+        <input type="text" id="last-name" name="lastname" required autocomplete="username" placeholder="Click to type">
         <label for="last-name">Last name</label>
       </div>
       </div>
     
       <div class="input-section">
-        <input type="email" id="email" name="email" required autocomplete="username" placeholder="click to type email">
+        <input type="email" id="email" name="email" required autocomplete="username" placeholder="Click to type email">
         <label for="email">Email</label>
       </div>
 
-      <div class="input-section">
-        <input type="text" id="address" name="address" required autocomplete="street-address" placeholder="click to type">
-        <label for="address">Adress</label>
-      </div>
+    <div class="input-section">
+         <input type="text" id="address" name="address" required autocomplete="address-level1" placeholder="Click to type">
+         <label for="address">Adress</label>
+     </div>
+    </div>
 
     </form>
      
@@ -269,13 +270,25 @@
         <path d="M22.6163 7.57613C22.1829 7.42032 21.4956 7.24829 20.6457 7.24829C18.476 7.24829 16.9482 8.2968 16.9388 9.79585C16.9208 10.9018 18.0327 11.5161 18.8643 11.8849C19.7143 12.2618 20.0033 12.5077 20.0033 12.8436C19.9946 13.3595 19.3164 13.5973 18.6839 13.5973C17.8067 13.5973 17.3367 13.4747 16.6224 13.1877L16.3331 13.0646L16.0257 14.7932C16.541 15.006 17.4904 15.1947 18.476 15.203C20.7813 15.203 22.2821 14.1707 22.2999 12.5733C22.3087 11.6967 21.7215 11.025 20.4557 10.4761C19.6873 10.1238 19.2167 9.88622 19.2167 9.52572C19.2257 9.198 19.6147 8.86232 20.4822 8.86232C21.1964 8.84588 21.7212 9.00147 22.1187 9.15717L22.3175 9.23893L22.6163 7.57613Z" fill="#15195A"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M26.549 7.38794H28.2485L30.0209 15.0882H27.9867C27.9867 15.0882 27.7876 14.2035 27.7245 13.9331H24.9037C24.8221 14.1378 24.4426 15.0882 24.4426 15.0882H22.1373L25.4007 8.02684C25.6268 7.52709 26.025 7.38794 26.549 7.38794ZM26.4137 10.2058C26.4137 10.2058 25.7174 11.918 25.5365 12.3604H27.3627C27.2723 11.9754 26.8563 10.1321 26.8563 10.1321L26.7027 9.46863C26.6381 9.63948 26.5446 9.87438 26.4815 10.0328C26.4388 10.1402 26.41 10.2125 26.4137 10.2058Z" fill="#15195A"/><path d="M6.4704 7.38794C6.9494 7.40421 7.33805 7.54369 7.46454 8.0354L8.23212 11.5715L8.23309 11.5735L8.46844 12.6389L10.6198 7.38794H12.9431L9.48993 15.0803H7.16669L5.2077 8.38892C4.53214 8.03103 3.7611 7.74297 2.89911 7.54321L2.93524 7.38794H6.4704Z" fill="#15195A"/></svg>
       </label> 
-       
-      <div class="input-section">
-       <input type="text" id="card-number" inputmode="numeric" placeholder="Enter card number">
-       <label for="card-number" class="card-information">Card</label>
-      </div>
 
-      </div> 
+      <div class="card-number-section">
+       <input type="text" id="card-number" inputmode="numeric" placeholder="Enter card number" required>
+       <label for="card-number" class="card-information">Card</label>
+
+       <div class="security-code">
+       <div class="cvc-code">
+        <label for="cvc"><span class="code">CVC</span></label>
+        <input type="text" id="cvc" inputmode="numeric" placeholder="123" required>
+       </div>
+       
+       <div class="expiry-code">
+        <label for="expiry"><span class="code">Exp date</span></label>
+        <input type="text" id="expiry" inputmode="numeric" placeholder="MM/YY" required>
+       </div>
+      </div>
+     </div>
+    </div> 
+      
        <a class="purchase-button" href="confirmation.page.html">Purchase</a>
     </fieldset>
     </section>

@@ -7,7 +7,8 @@
   -webkit-text-stroke: 1.3px;
 }
 
-#price {
+#price,
+#price-nav-bar {
     width: 82px;
     height: 7px;
     accent-color: #007A99;
@@ -149,7 +150,8 @@ li .color-checked{
   width: 50%;
   padding-left: 0;
 }
-#price {
+#price,
+#price-nav-bar {
   margin-left: 0;
 }
 }
