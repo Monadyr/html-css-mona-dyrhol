@@ -28,64 +28,7 @@ h1{
 }
 
 /* FILTER BUTTON */
-.sidebar input,
-#filter-toggle{
-  opacity: 0;
-}
 
-.filter-button{
-  font-size: 15px;
-  font-family: var(--second-font-family);
-  -webkit-text-stroke: 1.3px;
-
-  position: absolute;
-  top: 250px;
-  padding: 1vw 1.2vw 1vw 1.2vw;
-  background-color: white;
-  color: black; 
-}
-.filter-button:hover {
-  background-color: rgba(10, 54, 65, 0.47);
-  backdrop-filter: blur(20px);
-  color: white;
-  translate: 1s;
-}
-
-.sidebar {
-  position: absolute;
-  left: -330px;
-  top: 300px;
-  width: 318px;
-  background: white;
-  z-index: 50;
-  border-radius: 0 8px 8px 0;
-  padding-left: 10px;
-  transition: 0.5s;
-}
-.sidebar fieldset {
-  border: none;
-}
-
-.keyboard-nav{
-  position:absolute;
-  width: 10px;
-  height: 10px;
-  margin: 0px;
-  padding: 0;
-  border: 0;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 2;
-  overflow: hidden;
-}
-.keyboard-nav:focus + label.filter-button {
-  outline: 2px solid rgb(32, 90, 214);
-  outline-offset: 2px;
-}
-label.filter-button{
-  cursor: pointer;
-  display: inline-block;
-}
 
 /* Main */
 .products-area {
@@ -161,10 +104,6 @@ label.filter-button{
 
 #menu-toggle:checked ~ .top-bar ul {
   display: flex;
-}
-
-.filter-button {
-  display: none;
 }
 
 .menu-mobile {
