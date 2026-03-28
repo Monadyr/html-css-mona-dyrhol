@@ -96,12 +96,6 @@ h1{
   
 
 @media (max-width: 900px) {
-.header {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
 #menu-toggle:checked ~ .top-bar ul {
   display: flex;
 }
@@ -112,12 +106,6 @@ h1{
   border: none;
   cursor: pointer;
   z-index: 100;
-}
-
-#cart-icon,
-#my-profil-icon {
-  display: flex;
-  padding-right: 20px;
 }
 
 .top-bar .home,
@@ -165,16 +153,6 @@ footer {
   place-items: start;
 }
 }
-@media (max-width: 700px) {
-  
-  .header{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
- }
-}
-
   @media (max-width: 600px) {
     h1{
       top: 20%;
