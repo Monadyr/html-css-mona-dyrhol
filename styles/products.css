@@ -7,7 +7,7 @@ h1{
   position: absolute;
   top: 30%;
   left: 15%;
-  background: rgba(10, 54, 65, 47%);
+  background: rgba(10, 54, 65, 0.47);
   backdrop-filter: blur(20px);
   color: white;
   font-size: clamp(20px, 2.08vw, 50px);

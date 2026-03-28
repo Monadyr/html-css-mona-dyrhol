@@ -4,14 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="This page is under construction at Rainy Days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   <title>Coming Soon</title>
   <link rel="stylesheet" href="styles/placeholder-page.css">
   <link rel="icon" href="images/RainyDays_Logo.png">
+  <style>
+    body{
+      height: 100vh;
+      background-image: linear-gradient(-45deg, rgba(10,54,65,1), rgb(15, 62, 74),rgb(29, 83, 96),rgb(53, 122, 139), rgb(51, 143, 163));
+      background-size: 200%;
+      animation: gradient 10s infinite alternate;
+    }
+    @keyframes gradient {
+      0% {background-position: left;}
+      100% {background-position: right;}
+      }
+    
+    main{
+      display: grid;
+      position: relative;
+      row-gap: 50px;
+      justify-content: center;
+      align-content: center;
+      top: 10vw;
+      font-family: "Julius Sans One", Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+    .info{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      border-radius: 50%;
+      line-height: 1.5;
+      text-wrap: balance;
+    }
+    .info svg{
+      stroke: rgb(255, 255, 255);
+      stroke-width: 2.5px;
+    }
+    main a{
+      display: inline-block;
+      margin: auto;
+      text-decoration: none;
+      color: black;
+      -webkit-text-stroke: 1px;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      padding: 1vw;
+      border-radius: 8px;
+      margin-top: -25px;
+    }
+    .loading{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: auto;
+      width: clamp(200px, 20vw, 500px);
+      height: 200px;
+    }
+    .loading div {
+      box-sizing: border-box;
+      place-self: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgb(0, 204, 255);
+      animation: loader 4s  infinite alternate;
+    }
+    .loading div:nth-child(2){
+      background: rgb(0, 204, 255);
+      animation-delay: 1s ;
+    }
+    .loading div:nth-child(3){
+      background: rgb(0, 204, 255);
+      animation-delay: 2s;
+    }
+    .loading div:nth-child(4){
+      background: rgb(0, 204, 255);
+      animation-delay: 3s;
+    }
+   
+    @keyframes loader {
+      to {transform: translateY(-100px)}
+      from {transform: translateY(0)}
+    }
+  </style>
 </head>
 <body>
   <main>
-    <h1>Coming Soon</h1>
+
+  <div class="info">
+    <h1>Under construction</h1>
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M29.4 12.6C29.0336 12.9738 28.8283 13.4765 28.8283 14C28.8283 14.5235 29.0336 15.0261 29.4 15.4L32.6 18.6C32.9739 18.9664 33.4765 19.1717 34 19.1717C34.5235 19.1717 35.0262 18.9664 35.4 18.6L42.94 11.06C43.9457 13.2823 44.2502 15.7584 43.8129 18.1583C43.3757 20.5581 42.2174 22.7676 40.4926 24.4925C38.7677 26.2174 36.5581 27.3756 34.1583 27.8129C31.7585 28.2501 29.2824 27.9456 27.06 26.94L13.24 40.76C12.4444 41.5556 11.3652 42.0026 10.24 42.0026C9.1148 42.0026 8.03567 41.5556 7.24002 40.76C6.44437 39.9643 5.99738 38.8852 5.99738 37.76C5.99738 36.6347 6.44437 35.5556 7.24002 34.76L21.06 20.94C20.0543 18.7176 19.7498 16.2415 20.1871 13.8417C20.6244 11.4418 21.7826 9.23227 23.5075 7.5074C25.2323 5.78253 27.4419 4.6243 29.8417 4.18704C32.2415 3.74979 34.7176 4.05429 36.94 5.05996L29.4 12.6Z" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
     <h2>Good things come to those who wait</h2>
+  </div>
+
+    <div class="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+
+  <a href="index.html" class="link-home">Go back to store</a>
+
   </main>
 </body>
 </html>

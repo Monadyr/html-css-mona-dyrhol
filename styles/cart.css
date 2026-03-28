@@ -276,6 +276,11 @@ font-size: 12px;
   background-color: #0A3641;
   right: -70px;
 }
+@media (max-width: 1000px) {
+  .purchase-button{
+    right: 0;
+  }
+}
 
 @media (max-width: 800px){
   .cart-container {
@@ -287,8 +292,8 @@ font-size: 12px;
   .selections{
     display: none;
   }
-  #purchase-button{
-    right: 50px;
+  .purchase-button{
+    justify-self: center;
   }
 }
 @media (max-width: 570px) {
