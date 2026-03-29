@@ -4,9 +4,6 @@
   width: 1px;
   height: 1px;
   margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
 }
 
 .filter-button{
@@ -19,6 +16,7 @@
   padding: 1vw 1.2vw 1vw 1.2vw;
   background-color: white;
   color: black; 
+  cursor: pointer;
 }
 .filter-button:hover {
   background-color: rgba(10, 54, 65, 0.47);
