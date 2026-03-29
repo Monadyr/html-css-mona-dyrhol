@@ -36,7 +36,8 @@ h1 {
   scroll-behavior: smooth;
 }
 
-.product-preview  {
+.product-preview 
+ {
   flex: 0 0 auto;
   display: grid;
   grid-template-rows: 1fr auto;
